@@ -1,0 +1,58 @@
+{
+  "version": "0.0.1",
+  "name": "Titli",
+  "description": "A Real-Time Inundation Delineator",
+  "launch_path": "/index.html",
+  "icons": {
+    "16": "/icons/icon16x16.png",
+    "48": "/icons/icon48x48.png",
+    "60": "/icons/icon60x60.png",
+    "128": "/icons/icon128x128.png"
+  },
+  "developer": {
+    "name": "Aniruddha Pandey",
+    "url": "http://github.com/aniruddha0pandey"
+  },
+  "type": "certified",
+  "permissions": {
+    "camera": {
+      "description": "Required for Uploading Images"
+    },
+    "desktop-notification": {
+      "description": "Required to schedule notifications"
+    },
+    "device-storage:sdcard": {
+      "description": "Required to identify",
+      "access": "readwrite"
+    },
+    "geolocation": {
+      "description": "Required to get location"
+    },
+    "input": {
+      "description": "Required to add remarks"
+    },
+    "mobileid": {
+      "description": "Required to identify"
+    },
+    "mobilenetwork": {
+      "description": "Required to download map"
+    },
+    "push": {
+      "description": "Required to update markers"
+    },
+    "speech-recognition": {
+      "description": "Required to provide accessibility"
+    }
+  },
+  "locales": {
+    "en-US": {
+      "name": "Titli",
+      "description": "A Real-Time Inundation Delineator"
+    },
+    "hi-HI": {
+      "name": "तितली",
+      "description": "एक रियल-टाइम इनुलेशन डेलीनेटर"
+    }
+  },
+  "default_locale": "en-US"
+}
