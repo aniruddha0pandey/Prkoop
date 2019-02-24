@@ -14,8 +14,34 @@ function initMap() {
 	      lng: position.coords.longitude
 	    };
 
+	    var infoWindowContent =
+		     '<div id="form">'
+		  +    '<table>'
+		  +    '<tr>'
+		  +      '<td><button>Image</button></td>'
+		  +    '</tr>'
+		  +    '<tr>'
+		  +      '<td>Remarks:</td>'
+		  +      '<td><input type="text" id="address"/></td>'
+		  +    '</tr>'
+		  +    '<tr>'
+		  +      '<td>Status:</td>'
+		  +      '<td>'
+		  +        '<input type="radio" name="status" value="moderate"> Moderate |'
+		  +        '<input type="radio" name="status" value="alert"> Alert |'
+		  +        '<input type="radio" name="status" value="danger"> Danger'
+		  +      '</td>'
+		  +    '</tr>'
+		  +    '<tr>'
+		  +      '<td></td>'
+		  +      '<td><input type="button" value="Save" onclick="saveData()"/></td>'
+		  +    '</tr>'
+		  +    '</table>'
+		  +  '</div>'
+
 	    infoWindow.setPosition(pos);
-	    infoWindow.setContent(document.getElementById('form'));
+	    infoWindow.setContent( infoWindowContent );
+	    // infoWindow.setContent(document.getElementById('form'));
 	    infoWindow.open(map);
 	    map.setCenter(pos);
 	  }, function() {
